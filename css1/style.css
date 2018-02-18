@@ -13,7 +13,7 @@ body a {
 }
 @font-face {
    font-family: 'Montserrat-Regular';
-   src: url(../fonts/Montserrat-Regular.ttf)format('truetype');
+   /*src: url(../fonts/Montserrat-Regular.ttf)format('truetype');*/
 }
 a:hover,h5.inner.two a:hover{
  text-decoration:none;
@@ -81,7 +81,8 @@ ul.top-nag  a.active{
     border: 1px solid #5B3A6D;
     padding: 0.5em 0;
     background:#5B3A6D;
-    width: 99%;
+    /*background: purple;*/
+    width: 100%;
 }
 .b-search input[type="text"]{
 	width: 85%;
@@ -94,7 +95,7 @@ ul.top-nag  a.active{
 	background:#5B3A6D;
 }
 .b-search input[type="submit"]{
-	background: url(../images/search.png) no-repeat 0px 2px;
+	/*background: url(../images/search.png) no-repeat 0px 2px;*/
 	border: none;
 	height: 26px;
 	width: 26px;
@@ -130,7 +131,7 @@ ul.top-nag  a.active{
 }
 .header-top-right form input[type="submit"] {
     color: #FFF;
-    background: #ffcc00 url(../images/search.png) no-repeat 10px 8px;
+    /*background: #ffcc00 url(../images/search.png) no-repeat 10px 8px;*/
     width: 26px;
     font-size: 16px;
     float: left;
@@ -922,6 +923,7 @@ p.lom{
 	outline: none;
     border: none;
     background: #4A245E;
+    background:#5B3A6D;
     color: #fff;
     font-weight: 400;
     font-size: 16px;
@@ -1441,7 +1443,7 @@ ul.bottom i {
   height: 22px;
   border: none;
   text-indent: 100%;
-  background: url(../images/move-top.png) no-repeat 0px 0px;
+  /*background: url(../images/move-top.png) no-repeat 0px 0px;*/
 }
 /*--responsive--*/
 @media (max-width:1600px){
