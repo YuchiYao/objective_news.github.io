@@ -26,11 +26,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head>
 <body>
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Launch demo modal</button>
 	<!-- header-section-starts -->
       <div class="h-top" id="home">
 		   <div class="top-header">
 				  <ul class="cl-effect-16 top-nag">
 						<li><a href="signin.html">Sign in</a></li> 
+
 						<li><a href="sign_up.html">Sign up</a></li>
 						
 					</ul>
@@ -82,22 +84,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<!-- <ul class="rslides" id="slider4">
 					       <li>
 							  <img src="images/x.jpg" class="img-responsive" alt="" />
-
 							</li>
 							<li>
 								 <img src="images/x.jpg" class="img-responsive" alt="" />
-
-
 							</li>
 							<li>
 							 <img src="images/x.jpg" class="img-responsive" alt="" />
-
 							
 							</li>
 							<li>
 							 <img src="images/x.jpg" class="img-responsive" alt="" />
-
-
 							</li>
 						</ul> -->
 					</div>
@@ -264,7 +260,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									});
 								</script> -->
 		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-
+<!--  Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
