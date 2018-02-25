@@ -13,146 +13,251 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
-	<!-- header-section-starts -->
-      	<div class="h-top" id="home">
-		   <div class="top-header">
-				  <ul class="cl-effect-16 top-nag">
-						<li><a href="signin.html">Sign in</a></li> 
-						<li><a href="sign_up.html">Sign up</a></li>
-						
-					</ul>
-					<div class="search-box">
-					    <div class="b-search">
-								<form>
-										<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-										<input type="submit" value="go">
-								</form>
-							</div>
-						</div>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-header_collaped" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Objective News</a>
+    </div>
 
-					<div class="clearfix"></div>
-				</div>
-       </div>
-    <h2 class="topic-title">TOPIC EXPLORATION: GUN LEGISLATION </h2>
-    <div class="clearfix"> </div>            
-             </div>
-              <div class="topic">
-                <div class="row topic-top">
-                    <div class="col-md-3 top-label">Generally Left</div>
-                    <div class="col-md-3 top-label">Generally Neutral</div>
-                    <div class="col-md-3 top-label">Generally Right</div>
-                </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-header_collaped">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">World<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Business</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Enterainment</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Science</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Manage Section</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="signin" href="#" data-toggle="modal" data-target="#signIn">Sign In/up</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- Modal signIn-->
+<div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="exampleModalLabel">Sign In</h2>
+      </div>
+      <div class="modal-body ">   
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-check ">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" 
+                data-toggle="dropdown">
+                More Option <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signup" >Sign Up</a>
+              </li>
+              <li><a href="#">Forget Account</a></li>
+            </ul>
+        </div>
+        <a href="login.html">
+          <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div class="top-topic-inner">
-                    <div class="col-md-3 article-box left-box">
-                        <h4 class="topic-article-name"><a href="single.html">Gun Control, NOW!</a></h4>
-                        <h5 class="top">Source: <a href="single.html"> My Veronj</a> </h5>
-                        <h5 class="topic-rating"> Source Avg Rating: -24 (Left)</h5>
-                        <h5 class="topic-rating"> Article Rating: -42  Very Left</h5>
-                    </div>
-                    <div class="col-md-3 article-box">
-                        <h4 class="topic-article-name"><a href="single.html"> Right and Left React to Gun Control</a></h4>
-                        <h5 class="top">Source: <a href="single.html">New York Times</a> </h5>
-                        <h5 class="topic-rating"> Source Avg Rating: -10 (Lean Left)</h5>
-                        <h5 class="topic-rating"> Article Rating: -3 Center</h5>
-                    </div>
-                    <div class="col-md-3 article-box two right-box">
-                        <h4 class="topic-article-name"><a href="single.html">Gun Control Isn't the Answer</a></h4>
-                        <h5 class="top">Source: <a href="single.html"> National Review</a></h5>
-                        <h5 class="topic-rating"> Source Avg Rating:  45 (Very Right)</h5>
-                        <h5 class="topic-rating"> Article Rating: 39 Very Right</h5>
-                    </div>
-                    <div class="clearfix"> </div>
+<!-- Modal signUp-->
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="exampleModalLabel">Sign Up</h2>
+      </div>
+      <div class="modal-body">   
+        <form action="#" method="post" class="form" role="form">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control sign_up" name="firstname" placeholder="First Name" type="text"
+                        required autofocus />
                 </div>
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control sign_up" name="lastname" placeholder="Last Name" type="text" required />
+                </div>
+            </div>
+            <input class="form-control sign_up" name="youremail" placeholder="Your Email" type="email" />
+            <input class="form-control sign_up" name="reenteremail" placeholder="Re-enter Email" type="email" />
+            <input class="form-control sign_up" name="password" placeholder="New Password" type="password" />
+            <label for="">
+                Birth Date</label>
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Month">Month</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Day">Day</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Year">Year</option>
+                    </select>
+                </div>
+            </div>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                Female
+            </label>
+            <br />
+            <br />
+            <button class="btn btn-lg btn-primary btn-block" type="submit" data-dismiss="modal" data-target="#succeed" data-toggle="modal">
+                Sign up</button>
+            </form>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div class="top-inner second">
-                    <div class="col-md-3 article-box left-box">
-                        <h4 class="topic-article-name"><a href="single.html"> America's Baffling Gun Control Debate</a></h4>
-                        <h5 class="top">Source: <a href="single.html">Huffinton Post UK</a> </h5>
-                        <h5 class="topic-rating"> Source Avg Rating: -47 (Very Left)</h5>
-                        <h5 class="topic-rating"> Article Rating: -45 Very Left</h5>
-                    </div>
-                    <div class="col-md-3 article-box">
-                        <h4 class="topic-article-name"><a href="single.html">Students plan to walk out of schools to protest gun law</a></h4>
-                        <h5 class="top">Source: <a href="single.html"> USA Today</a> </h5>
-                        <h5 class="topic-rating"> Source Avg Rating: -12 (Lean Left)</h5>
-                        <h5 class="topic-rating"> Article Rating: -7  Slight Left</h5>
-                    </div>
-                    <div class="col-md-3 article-box two right-box">
-                        <h4 class="topic-article-name"><a href="single.html"> Longtime Republican donor calls for new gun laws</a></h4>
-                        <h5 class="top">Source: <a href="single.html"> National Review</a></h5>
-                        <h5 class="topic-rating"> Source Avg Rating:  41 (Very Right)</h5>
-                        <h5 class="topic-rating"> Article Rating: 14 Right</h5>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
+<!-- Modal signUp Succeed-->
+<div class="modal" id="succeed" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">      
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title">Congratulations</h3>  
+      </div>
+      <div class="modal-body">
+        <p>Your account number is 38947185</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-                <div class="top-topic-inner">
-                    <div class="col-md-3 article-box left-box">
-                        <h4 class="topic-article-name"><a href="single.html">Gun Control, NOW!</a></h4>
-                        <h5 class="top">Source: <a href="single.html"> My Veronj</a> </h5>
-                        <h5 class="topic-rating"> Source Avg Rating: -24 (Left)</h5>
-                        <h5 class="topic-rating"> Article Rating: -42  Very Left</h5>
-                    </div>
-                    <div class="col-md-3 article-box">
-                        <h4 class="topic-article-name"><a href="single.html"> Right and Left React to Gun Control</a></h4>
-                        <h5 class="top">Source: <a href="single.html">New York Times</a> </h5>
-                        <h5 class="topic-rating"> Source Avg Rating: -10 (Lean Left)</h5>
-                        <h5 class="topic-rating"> Article Rating: -3 Center</h5>
-                    </div>
-                    <div class="col-md-3 article-box two right-box">
-                        <h4 class="topic-article-name"><a href="single.html">Gun Control Isn't the Answer</a></h4>
-                        <h5 class="top">Source: <a href="single.html"> National Review</a></h5>
-                        <h5 class="topic-rating"> Source Avg Rating:  45 (Very Right)</h5>
-                        <h5 class="topic-rating"> Article Rating: 39 Very Right</h5>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/topic.js"></script>
 
-                <div class="top-inner second">
-                    <div class="col-md-3 article-box left-box">
-                        <h4 class="topic-article-name"><a href="single.html"> America's Baffling Gun Control Debate</a></h4>
-                        <h5 class="top">Source: <a href="single.html">Huffinton Post UK</a> </h5>
-                        <h5 class="topic-rating"> Source Avg Rating: -47 (Very Left)</h5>
-                        <h5 class="topic-rating"> Article Rating: -45 Very Left</h5>
-                    </div>
-                    <div class="col-md-3 article-box">
-                        <h4 class="topic-article-name"><a href="single.html">Students plan to walk out of schools to protest gun law</a></h4>
-                        <h5 class="top">Source: <a href="single.html"> USA Today</a> </h5>
-                        <h5 class="topic-rating"> Source Avg Rating: -12 (Lean Left)</h5>
-                        <h5 class="topic-rating"> Article Rating: -7  Slight Left</h5>
-                    </div>
-                    <div class="col-md-3 article-box two right-box">
-                        <h4 class="topic-article-name"><a href="single.html"> Longtime Republican donor calls for new gun laws</a></h4>
-                        <h5 class="top">Source: <a href="single.html"> National Review</a></h5>
-                        <h5 class="topic-rating"> Source Avg Rating:  41 (Very Right)</h5>
-                        <h5 class="topic-rating"> Article Rating: 14 Right</h5>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
 
-                </div>
-             </div>
-       <!--<a href="single.html"><div class="row">
-        <div class="col-md-8">Students plan to walk out of schools to protest gun laws</div>
-        <div class="col-md-2">USA Today</div>
-        <div class="col-md-2">Left: 15</div>
-    </div></a>
-    <a href="single.html"><div class="row">
-        <div class="col-md-8">Longtime Republican donor calls for new gun laws</div>
-        <div class="col-md-2">Fox News </div>
-        <div class="col-md-2">Right: 26</div>
-    </div></a>
-    <a href="single.html"><div class="row">
-        <div class="col-md-8">Students, Teachers Plan Boycott on Columbine Anniversary</div>
-        <div class="col-md-2">NewsWeek</div>
-        <div class="col-md-2">Left: 22</div>
-    </div></a>
-    <a href="single.html"><div class="row">
-        <div class="col-md-8">No more guns!': Florida students rally to denounce political inaction</div>
-        <div class="col-md-2">Washington Post</div>
-        <div class="col-md-2">Left: 28</div>
-    </div></a> -->
+
+<h2 class="topic-title">TOPIC EXPLORATION: GUN LEGISLATION </h2>
+
+<div class="col-xs-2 col-md-2 col-md-offset-8">
+    <select class="form-control" id="topic-filter" onchange="onFilterSelect()">
+        <option value="Most Recent">Most Recent</option>
+        <option value="Most Extreme">Most Extreme</option>
+        <option value="Most Neutral">Most Neutral</option>
+        <option value="Most Rated">Most Rated</option>
+    </select>
+</div>
+<div class="clearfix"> </div>            
+ </div>
+  <div class="topic">
+    <div class="row topic-top">
+        <div class="col-md-3 top-label col-md-offset-1">Generally Left</div>
+        <div class="col-md-3 top-label">Generally Neutral</div>
+        <div class="col-md-3 top-label">Generally Right</div>
+    </div>
+
+    <div class="col-md-3 col-md-offset-1" id="left-column">
+        <div class="article-box left-box" data-date="1" data-ratings="24" data-score="-42">
+            <h4 class="topic-article-name"><a href="single.html">Gun Control, NOW!</a></h4>
+            <h5 class="top">Source: <a href="single.html"> My Veronj</a> </h5>
+            <h5 class="topic-rating"> Article Rating: -42  Very Left <i> 24 Ratings</i></h5>
+            <h5 class="topic-rating"> Source Avg Rating: -24 (Left)</h5>
+        </div>
+
+        <div class="article-box left-box" data-date="2" data-ratings="36" data-score="-45">
+            <h4 class="topic-article-name"><a href="single.html"> America's Baffling Gun Control Debate</a></h4>
+            <h5 class="top">Source: <a href="single.html">Huffinton Post UK</a> </h5>
+            <h5 class="topic-rating"> Article Rating: -45 Very Left <i> 36 Ratings</i></h5>
+            <h5 class="topic-rating"> Source Avg Rating: -47 (Very Left)</h5>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+
+    <div class="col-md-3" id="center-column">
+        <div class="article-box" data-date="1" data-ratings="42" data-score="2">
+            <h4 class="topic-article-name"><a href="single.html"> Right and Left React to Gun Control</a></h4>
+            <h5 class="top">Source: <a href="single.html">New York Times</a> </h5>
+            <h5 class="topic-rating"> Article Rating: 2 Neutral<i> 42 Ratings</i></h5>
+            <h5 class="topic-rating"> Source Avg Rating: -2 (Neutral)</h5>
+        </div>
+        <div class="article-box" data-date="2" data-ratings="8" data-score="-7">
+            <h4 class="topic-article-name"><a href="single.html">Students plan to walk out of schools to protest gun law</a></h4>
+            <h5 class="top">Source: <a href="single.html"> USA Today</a> </h5>
+            <h5 class="topic-rating"> Article Rating: -7  (Lean Left) <i> 8 Ratings</i></h5>
+            <h5 class="topic-rating"> Source Avg Rating: -12 (Lean Left) </h5>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+
+    <div class="col-md-3"  id="right-column">
+        <div class="article-box two right-box" data-date="1" data-ratings="72" data-score="39">
+            <h4 class="topic-article-name"><a href="single.html">Gun Control Isn't the Answer</a></h4>
+            <h5 class="top">Source: <a href="single.html"> National Review</a></h5>
+            <h5 class="topic-rating"> Article Rating: 39 Very Right <i> 72 Ratings</i></h5>
+            <h5 class="topic-rating"> Source Avg Rating:  45 (Very Right)</h5>
+        </div>
+        <div class="article-box two right-box" data-date="2" data-ratings="12" data-score="14">
+            <h4 class="topic-article-name"><a href="single.html"> Longtime Republican donor calls for new gun laws</a></h4>
+            <h5 class="top">Source: <a href="single.html"> National Review</a></h5>
+            <h5 class="topic-rating"> Article Rating: 14 Right <i> 12 Ratings</i></h5>
+            <h5 class="topic-rating"> Source Avg Rating:  41 (Very Right)</h5>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+
+    </div>
+</div>
 
 </body>
 </html>

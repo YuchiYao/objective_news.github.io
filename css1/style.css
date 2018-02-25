@@ -574,16 +574,22 @@ color:#4a245e;
 }
 .top-text img {
     margin-bottom: 0.7em;
+    padding: auto;
+    margin: 0 auto;
+    float: none;
+}
+.top-inner {
+  padding: auto;
 }
 .top-inner.second {
     margin-top: 1.3em;
 }
 .top-text {
-    padding-left: 0;
+    padding-left: 50px;
 }
 .top-text.two{
- padding-right: 0;
-   padding-left:15px;
+  padding-right: 0;
+  padding-left:15px;
 }
 .top-news {
     padding: 2em 0;
