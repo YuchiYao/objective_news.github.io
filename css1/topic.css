@@ -1,0 +1,49 @@
+.col-md-3.top-label {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(124, 124, 124, .15);
+  border: 1px solid rgba(124, 124, 124, .2);
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.topic {
+    margin: 20px auto;
+}
+.topic-title {
+    margin: auto;
+}
+
+.topic-top {
+    margin: 20px auto;
+}
+
+.topic-article-name {
+	height: 36px;
+}
+
+.top-topic-inner {
+    margin: 20px auto;
+}
+
+.topic-rating {
+    margin-top: 5px;
+}
+
+.article-box {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 150px;
+    background-color: rgba(61, 144, 61, .1);
+}
+
+.left-box {
+	background-color: rgba(61, 61, 164, .1);
+}
+
+.right-box {
+	background-color: rgba(144, 61, 61, .1);
+}
