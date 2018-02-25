@@ -1,286 +1,180 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Blogger Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<!-- <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script> -->
-<link href="css1/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,700italic,800,300,300italic,400italic,400,600,600italic' rel='stylesheet' type='text/css'> -->
-<!--Custom-Theme-files-->
-	<link href="css1/style.css" rel='stylesheet' type='text/css' />	
-	<!-- <script src="js/jquery.min.js"> </script> -->
-<!--/script-->
-<!-- <script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-</script> -->
-
+	<title>Bootstrap Navbars</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="navbars.css">
 </head>
 <body>
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Launch demo modal</button>
-	<!-- header-section-starts -->
-      <div class="h-top" id="home">
-		   <div class="top-header">
-				  <ul class="cl-effect-16 top-nag">
-						<li><a href="signin.html">Sign in</a></li> 
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-header_collaped" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Objective News</a>
+    </div>
 
-						<li><a href="sign_up.html">Sign up</a></li>
-						
-					</ul>
-					<div class="search-box">
-					    <div class="b-search">
-								<form>
-										<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-										<input type="submit" value="go">
-								</form>
-							</div>
-						</div>
-
-					<div class="clearfix"></div>
-				</div>
-       </div>
-	<div class="full">
-			<div class="col-md-3 top-nav">
-				     <div class="logo">
-						<a href="index.html"><h1>Objective News</h1></a>
-					</div>
-					<div class="top-menu">
-					 <span class="menu"> </span>
-
-					<ul class="cl-effect-16">
-						<!-- <li><a class="active" href="index.html">World Politics</a></li>  -->
-						<li><a href="index.html">World Politics</a></li> 
-						<li><a href="about.html">U.S</a></li>
-						<li><a href="grid.html">Sports</a></li>
-						
-					</ul>
-					<!-- script-for-nav -->
-					<!-- <script>
-						$( "span.menu" ).click(function() {
-						  $( ".top-menu ul" ).slideToggle(300, function() {
-							// Animation complete.
-						  });
-						});
-					</script> -->
-				<!-- script-for-nav --> 	
-					
-			    </div>
-			</div>
-	<div class="col-md-9 main">
-		<!--banner-section-->
-		<div class="banner-section">
-		   <h3 class="tittle">General </h3>
-			<div class="banner">
-                 <div  class="callbacks_container">
-					<!-- <ul class="rslides" id="slider4">
-					       <li>
-							  <img src="images/x.jpg" class="img-responsive" alt="" />
-							</li>
-							<li>
-								 <img src="images/x.jpg" class="img-responsive" alt="" />
-							</li>
-							<li>
-							 <img src="images/x.jpg" class="img-responsive" alt="" />
-							
-							</li>
-							<li>
-							 <img src="images/x.jpg" class="img-responsive" alt="" />
-							</li>
-						</ul> -->
-					</div>
-					<!--banner-->
-	  			<!-- <script src="js/responsiveslides.min.js"></script> -->
-			 <!-- <script>
-			    // You can also use "$(window).load(function() {"
-			    $(function () {
-			      // Slideshow 4
-			      $("#slider4").responsiveSlides({
-			        auto: true,
-			        pager:true,
-			        nav:true,
-			        speed: 500,
-			        namespace: "callbacks",
-			        before: function () {
-			          $('.events').append("<li>before event fired.</li>");
-			        },
-			        after: function () {
-			          $('.events').append("<li>after event fired.</li>");
-			        }
-			      });
-			
-			    });
-			  </script> -->
-		 <div class="clearfix"> </div>
-			    
-			 </div>
-			   <!--//banner-->
-			  <!--/top-news-->
-			  <div class="top-news">
-				<div class="top-inner">
-					<div class="col-md-6 top-text">
-						 <a href="topic.html"><img src="images/1.jpg" class="img-responsive" alt=""></a>
-						 	<p>EXPLORE TOPIC: GUN LEGISLATION</p>
-						    <h5 class="top"><a href="single.html">Gun Control, NOW! (left) My Veronj</a></h5>
-						    <h5 class="top"><a href="single.html">Right and Left React to Gun Control Debate (center) New York Times</a></h5>
-						    <h5 class="top"><a href="single.html">Gun Control Isn't the Answer (right) National Review</a></h5>
-							
-						    <!-- <p>TIME <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span></a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span> </a><a class="span_link" href="single.html"><span class="glyphicon glyphicon-circle-arrow-right"></span></a></p> -->
-						    <!-- <p>TIME</p> -->
-					 </div>
-					<div class="col-md-6 top-text two">
-						 <a href="topic.html"><img src="images/2.jpg" class="img-responsive" alt=""></a>
-						 	<p>EXPLORE TOPIC: IMMIGRATION REFORM</p>
-						    <h5 class="top"><a href="single.html">Ending DACA has created a Crisis (left) HuffPost</a></h5>
-						    <h5 class="top"><a href="single.html">US Senate Votes on Immigration Reform (center) VOA</a></h5>
-						    <h5 class="top"><a href="single.html">No, Immigration Reform is not dead (right) CNS</a></h5>
-							<!-- <p>Abstract Abstract Abstract Abstract Abstract</p> -->
-						    <!-- <p>TIME</p> -->
-					 </div>
-					 <div class="clearfix"> </div>
-				 </div>
-				 <div class="top-inner second">
-					<div class="col-md-6 top-text">
-						 <a href="topic.html"><img src="images/3.jpg" class="img-responsive" alt=""></a>
-						 	<p>EXPLORE TOPIC: SCHOOL SHOOTINGS </p>
-						    <h5 class="top"><a href="single.html"> Florida Survivor to Trump: Shame on You (left) Vox</a></h5>
-						    <h5 class="top"><a href="single.html"> DeVos and Democrats Urge Congress to Hold... (center) New York Times</a></h5>
-						    <h5 class="top"><a href="single.html">No, there have not been 18 School Shootings in... (right) Fox</a></h5>
-							<!-- <p>Abstract Abstract Abstract Abstract Abstract</p> -->
-						    <!-- <p>TIME</p> -->
-					 </div>
-					<div class="col-md-6 top-text two">
-						 <a href="topic.html"><img src="images/4.jpg" class="img-responsive" alt=""></a>
-						 	<p>EXPLORE TOPIC: CRIMINAL JUSTICE REFORM </p>
-						    <h5 class="top"><a href="single.html"> Donald Trump and the Undoing of Justice Reform (left) New York Times</a></h5>
-						    <h5 class="top"><a href="single.html">Fate of bipartisan bill on criminal justice reform uncertain (center) PBS</a></h5>
-						    <h5 class="top"><a href="single.html">Celebrity justice: RBG edition (right) Richmond</a></h5>
-							<!-- <p>Abstract Abstract Abstract Abstract Abstract</p> -->
-						    <!-- <p>TIME</p> -->
-					 </div>
-					 <div class="clearfix"> </div>
-				 </div>
-	            </div>
-					<!--//top-news-->
-		     </div>
-			<!--//banner-section-->
-			<div class="banner-right-text">
-			 <h3 class="tittle">Top articles</h3>
-			<!--/general-news-->
-			 <div class="general-news">
-				<div class="general-inner">
-					<div class="general-text">
-						 <!-- <a href="single.html"><img src="images/gen1.jpg" class="img-responsive" alt=""></a> -->
-						    <h5 class="top"><a href="single.html">Consetetur sadipscing elit</a></h5>
-							<p>Abstract Abstract Abstract Abstract Abstract</p>
-						    <!-- <p>TIME</p> -->
-					 </div>
-					 <div class="edit-pics">
-							      <div class="editor-pics">
-										 <div class="col-md-3 item-pic">
-										   <!-- <img src="images/f4.jpg" class="img-responsive" alt=""> -->
-
-										   </div>
-											<div class="col-md-9 item-details">
-												<h5 class="inner two"><a href="single.html">Trump Blames Obama and Democrats for Failing to Stop Russian Meddling</a></h5>
-												 <!-- <div class="td-post-date two">TIME<a href="#"></a></div> -->
-											 </div>
-											<div class="clearfix"></div>
-										</div>
-										<div class="editor-pics">
-										 <div class="col-md-3 item-pic">
-										  <!--  <img src="images/f1.jpg" class="img-responsive" alt=""> -->
-
-										   </div>
-											<div class="col-md-9 item-details">
-												<h5 class="inner two"><a href="single.html">Netanyahu to Iran: 'Do Not Test Israel's Resolve'</a></h5>
-												 <!-- <div class="td-post-date two">TIME<a href="#"></a></div> -->
-											 </div>
-											<div class="clearfix"></div>
-										</div>
-										<div class="editor-pics">
-										 <div class="col-md-3 item-pic">
-										  <!--  <img src="images/f1.jpg" class="img-responsive" alt=""> -->
-
-										   </div>
-											<div class="col-md-9 item-details">
-												<h5 class="inner two"><a href="single.html">Florida Republican donor says he'll stop giving to GOP lawmakers who don't back gun control</a></h5>
-												 <!-- <div class="td-post-date two">TIME<a href="#"></a></div> -->
-											 </div>
-											<div class="clearfix"></div>
-										</div>
-										<div class="editor-pics">
-										 <div class="col-md-3 item-pic">
-										  <!--  <img src="images/f4.jpg" class="img-responsive" alt=""> -->
-
-										   </div>
-											<div class="col-md-9 item-details">
-												<h5 class="inner two"><a href="single.html">May's Brexit transition demand 'would penalise EU citizens'</a></h5>
-												 <!-- <div class="td-post-date two">TIME<a href="#"></a></div> -->
-											 </div>
-											<div class="clearfix"></div>
-										</div>
-									</div>
-								<!-- <div class="media">	
-								 <h3 class="tittle media">Media <i class="glyphicon glyphicon-floppy-disk"></i></h3>
-								  <div class="general-text two">
-									 <a href="single.html"><img src="images/gen3.jpg" class="img-responsive" alt=""></a>
-										<h5 class="top"><a href="single.html">Consetetur sadipscing elit</a></h5>
-										<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore dolore magna aliquyam eratsed diam justo duo dolores rebum.</p>
-										<p>On Jun 27 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a><a class="span_link" href="single.html"><span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
-								  </div>
-					         </div> -->
-					    
-	 <div class="clearfix"> </div>
-	</div>
-	<div class="clearfix"> </div>
-</div>	
-		<!--//footer-->
-			<!--start-smooth-scrolling-->
-						<!-- <script type="text/javascript">
-									$(document).ready(function() {
-										/*
-										var defaults = {
-								  			containerID: 'toTop', // fading element id
-											containerHoverID: 'toTopHover', // fading element hover id
-											scrollSpeed: 1200,
-											easingType: 'linear' 
-								 		};
-										*/
-										
-										$().UItoTop({ easingType: 'easeOutQuart' });
-										
-									});
-								</script> -->
-		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!--  Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-header_collaped">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">World<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Business</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Enterainment</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Science</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Manage Section</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="signin" href="#" data-toggle="modal" data-target="#signIn">Sign In/up</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- Modal signIn-->
+<div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
+        <h2 class="modal-title" id="exampleModalLabel">Sign In</h2>
       </div>
-      <div class="modal-body">
-        ...
+      <div class="modal-body ">   
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-check ">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" 
+                data-toggle="dropdown">
+                More Option <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signup" >Sign Up</a>
+              </li>
+              <li><a href="#">Forget Account</a></li>
+            </ul>
+        </div>
+        <a href="login.html">
+          <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+        </a>
       </div>
     </div>
   </div>
 </div>
-
+<!-- Modal signUp-->
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="exampleModalLabel">Sign Up</h2>
+      </div>
+      <div class="modal-body">   
+        <form action="#" method="post" class="form" role="form">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control sign_up" name="firstname" placeholder="First Name" type="text"
+                        required autofocus />
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control sign_up" name="lastname" placeholder="Last Name" type="text" required />
+                </div>
+            </div>
+            <input class="form-control sign_up" name="youremail" placeholder="Your Email" type="email" />
+            <input class="form-control sign_up" name="reenteremail" placeholder="Re-enter Email" type="email" />
+            <input class="form-control sign_up" name="password" placeholder="New Password" type="password" />
+            <label for="">
+                Birth Date</label>
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Month">Month</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Day">Day</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Year">Year</option>
+                    </select>
+                </div>
+            </div>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                Female
+            </label>
+            <br />
+            <br />
+            <button class="btn btn-lg btn-primary btn-block" type="submit" data-dismiss="modal" data-target="#succeed" data-toggle="modal">
+                Sign up</button>
+            </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal signUp Succeed-->
+<div class="modal" id="succeed" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">      
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title">Congraduation</h3>  
+      </div>
+      <div class="modal-body">
+        <p>Your account number is 38947185</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="control.js"></script>
 </body>
 </html>
+
