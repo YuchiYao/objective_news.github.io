@@ -18,7 +18,7 @@ function onFilterSelect() {
 				var bord = parseInt(b.getAttribute(sortAttribute));
 				return bord - aord;
 			});
-		} else if (x == "Most Extreme") {
+		} else if (x == "Least Neutral") {
 			sortAttribute = "data-score"
 			toSort.sort(function(a, b) {
 				var aord = Math.abs(parseInt(a.getAttribute(sortAttribute)));
@@ -37,6 +37,20 @@ function onFilterSelect() {
 			toSort.sort(function(a, b) {
 				var aord = parseInt(a.getAttribute(sortAttribute));
 				var bord = parseInt(b.getAttribute(sortAttribute));
+				return bord - aord;
+			});
+		} else if (x == "Least Neutral Source") {
+			sortAttribute = "data-source-score"
+			toSort.sort(function(a, b) {
+				var aord = Math.abs(parseInt(a.getAttribute(sortAttribute)));
+				var bord = Math.abs(parseInt(b.getAttribute(sortAttribute)));
+				return bord - aord;
+			});
+		} else if (x == "Most Neutral Source") {
+			sortAttribute = "data-source-score"
+			toSort.sort(function(a, b) {
+				var aord = -Math.abs(parseInt(a.getAttribute(sortAttribute)));
+				var bord = -Math.abs(parseInt(b.getAttribute(sortAttribute)));
 				return bord - aord;
 			});
 		}
