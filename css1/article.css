@@ -1,0 +1,48 @@
+.article-text-entry {
+}
+
+.article-submit{
+    margin: 20px auto;
+}
+
+.article-cancel{
+    margin: 20px auto;
+}
+
+.article-comment {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 150px;
+    background-color: rgba(61, 144, 61, .1);
+    box-shadow: 2px 4px #888888;
+}
+
+.comment-profile {
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+
+.comment-username {
+	max-height: 25%;
+	margin-left: 5%;
+	width: 35%;
+	float: left;
+	font-size: 14;
+	font-weight: bold;
+}
+.comment-time {
+	max-height: 25%;
+	width: 40%;
+	float: left;
+	font-style: italic;
+	font-size: 12;
+}
+.comment-body {
+	max-height: 75%
+	margin-left: 5px;
+	font-size: 12;
+	/*float: left;*/
+}
