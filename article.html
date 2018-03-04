@@ -8,7 +8,7 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <link href="css1/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="css1/style.css" rel='stylesheet' type='text/css' />	
-<link href="css1/topic.css" rel='stylesheet' type='text/css' /> 
+<link href="css1/article.css" rel='stylesheet' type='text/css' /> 
 
 </head>
 
@@ -184,106 +184,60 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="js/topic.js"></script>
+<script src="js/article.js"></script>
 
 
 
-<h2 class="topic-title">TOPIC EXPLORATION: GUN LEGISLATION </h2>
+<h2 class="topic-title">Article: GUN LEGISLATION </h2>
 
-<div class="col-xs-2 col-md-2 col-md-offset-8">
-    <select class="form-control" id="topic-filter" onchange="onFilterSelect()">
-        <option value="Most Recent">Most Recent</option>
-        <option value="Least Neutral">Least Neutral</option>z
-        <option value="Most Neutral">Most Neutral</option>
-        <option value="Most Rated">Most Rated</option>
-        <option value="Least Neutral Source">Least Neutral Source</option>
-        <option value="Most Neutral Source">Most Neutral Source</option>
+  <div class="col-md-8 col-md-offset-2">
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control article-text-entry" rows="5" id="comment" oninput="OnTextInput()"></textarea>
+      <button type="submit" class="btn btn-default article-cancel" onclick="OnCommentCancel()">Cancel</button>
+      <button type="submit" id="comment-submit-button" class="btn btn-default article-submit" disabled="True" onclick="OnCommentSubmit()">Submit</button>
+    </div>
+  </div>
+
+  <div class="col-xs-2 col-md-2 col-md-offset-8">
+    <select class="form-control" id="comment-filter" onchange="onFilterSelect()">      
+        <option value="Newest First">Newest First</option>
+        <option value="Oldest First">Oldest First</option>
     </select>
-</div>
-<div class="clearfix"> </div>            
- </div>
-  <div class="topic">
-    <div class="row topic-top">
-        <div class="col-md-3 top-label col-md-offset-1">Generally Left</div>
-        <div class="col-md-3 top-label">Generally Neutral</div>
-        <div class="col-md-3 top-label">Generally Right</div>
+  </div>
+  <div class="col-md-8 col-md-offset-2" id="comment-section">
+    <div class="article-comment" data-time="47">
+      <img class="comment-profile" src="img/anon_user.png" alt="...">
+      <div class="comment-username">  User 1 </div>
+      <div class="comment-time"> 1 hour ago</div>
+      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
+    </div>
+    <div class="article-comment" data-time="120">
+      <img class="comment-profile" src="img/anon_user.png" alt="...">
+      <div class="comment-username"> User 2  </div>
+      <div class="comment-time" > 2 hours ago</div>
+      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
+    </div>
+    <div class="article-comment" data-time="240">
+      <img class="comment-profile" src="img/anon_user.png" alt="...">
+      <div class="comment-username"> User 3 </div>
+      <div class="comment-time"> 4 hours ago</div>
+      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
+    </div>
+    <div class="article-comment" data-time="480">
+      <img class="comment-profile" src="img/anon_user.png" alt="...">
+      <div class="comment-username"> User 4 </div>
+      <div class="comment-time"> 8 hours ago</div>
+      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
+    </div>
+    <div class="article-comment" data-time="1440">
+      <img class="comment-profile" src="img/anon_user.png" alt="...">
+      <div class="comment-username"> User 5 </div>
+      <div class="comment-time"> 1 day ago</div>
+      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
     </div>
 
-    <div class="col-md-3 col-md-offset-1" id="left-column">
-        <div class="article-box left-box" data-date="1" data-ratings="24" data-score="-42" data-source-score="-24">
-            <h4 class="topic-article-name"><a href="single.html">Gun Control, NOW!</a></h4>
-            <h5 class="top">Source: <a href="single.html"> My Veronj</a> </h5>
-            <h5 class="topic-rating"> Article Rating: -42  Very Left <i> 24 Ratings</i></h5>
-            <h5 class="topic-rating"> Source Avg Rating: -24 (Left)</h5>
-        </div>
 
-        <div class="article-box left-box" data-date="2" data-ratings="36" data-score="-45" data-source-score="-47">
-            <h4 class="topic-article-name"><a href="single.html"> America's Baffling Gun Control Debate</a></h4>
-            <h5 class="top">Source: <a href="single.html">Huffinton Post UK</a> </h5>
-            <h5 class="topic-rating"> Article Rating: -45 Very Left <i> 36 Ratings</i></h5>
-            <h5 class="topic-rating"> Source Avg Rating: -47 (Very Left)</h5>
-        </div>
-        <div class="article-box" data-date="3" data-ratings="13" data-score="-22" data-source-score="-13">
-            <h4 class="topic-article-name"><a href="single.html">CNN POll: 7 out of 10 want tighter Gun Control</a></h4>
-            <h5 class="top">Source: <a href="single.html"> NPR</a> </h5>
-            <h5 class="topic-rating"> Article Rating: -22  (Lean Left) <i> 13 Ratings</i></h5>
-            <h5 class="topic-rating"> Source Avg Rating: -13 (Lean Left) </h5>
-        </div>
-        <div class="article-box" data-date="4" data-ratings="22" data-score="-24" data-source-score="-12">
-            <h4 class="topic-article-name"><a href="single.html">Americans Support Gun Control. Don't Expect Congress to Act </a></h4>
-            <h5 class="top">Source: <a href="single.html"> USA Today</a> </h5>
-            <h5 class="topic-rating"> Article Rating: -24  (Lean Left) <i> 22 Ratings</i></h5>
-            <h5 class="topic-rating"> Source Avg Rating: -12 (Lean Left) </h5>
-        </div>
-        <div class="article-box" data-date="4" data-ratings="23" data-score="-22" data-source-score="-39">
-            <h4 class="topic-article-name"><a href="single.html">Support for Stricter Gun Control Reaches 25 Year High </a></h4>
-            <h5 class="top">Source: <a href="single.html"> Newsweek</a> </h5>
-            <h5 class="topic-rating"> Article Rating: -22  (Lean Left) <i> 23 Ratings</i></h5>
-            <h5 class="topic-rating"> Source Avg Rating: -39 (Left) </h5>
-        </div>
-        <div class="clearfix"> </div>
-    </div>
-
-    <div class="col-md-3" id="center-column">
-        <div class="article-box" data-date="1" data-ratings="42" data-score="2" data-source-score="-2">
-            <h4 class="topic-article-name"><a href="single.html"> Right and Left React to Gun Control</a></h4>
-            <h5 class="top">Source: <a href="single.html">New York Times</a> </h5>
-            <h5 class="topic-rating"> Article Rating: 2 Neutral<i> 42 Ratings</i></h5>
-            <h5 class="topic-rating"> Source Avg Rating: -2 (Neutral)</h5>
-        </div>
-        <div class="article-box" data-date="2" data-ratings="8" data-score="-7" data-source-score="-12">
-            <h4 class="topic-article-name"><a href="single.html">Students plan to walk out of schools to protest gun law</a></h4>
-            <h5 class="top">Source: <a href="single.html"> USA Today</a> </h5>
-            <h5 class="topic-rating"> Article Rating: -7  (Lean Left) <i> 8 Ratings</i></h5>
-            <h5 class="topic-rating"> Source Avg Rating: -12 (Lean Left) </h5>
-        </div>
-        <div class="article-box" data-date="3" data-ratings="14" data-score="8" data-source-score="-12">
-            <h4 class="topic-article-name"><a href="single.html">Polls show Millenials are no more Liberal on Gun Control</a></h4>
-            <h5 class="top">Source: <a href="single.html"> NPRay</a> </h5>
-            <h5 class="topic-rating"> Article Rating: 8  (Lean Right) <i> 14 Ratings</i></h5>
-            <h5 class="topic-rating"> Source Avg Rating: -12 (Lean Left) </h5>
-        </div>
-        
-        <div class="clearfix"> </div>
-    </div>
-
-    <div class="col-md-3"  id="right-column">
-        <div class="article-box two right-box" data-date="1" data-ratings="72" data-score="39" data-source-score="45">
-            <h4 class="topic-article-name"><a href="single.html">Gun Control Isn't the Answer</a></h4>
-            <h5 class="top">Source: <a href="single.html"> National Review</a></h5>
-            <h5 class="topic-rating"> Article Rating: 39 Very Right <i> 72 Ratings</i></h5>
-            <h5 class="topic-rating"> Source Avg Rating:  45 (Very Right)</h5>
-        </div>
-        <div class="article-box two right-box" data-date="2" data-ratings="12" data-score="14" data-source-score="41">
-            <h4 class="topic-article-name"><a href="single.html"> Longtime Republican donor calls for new gun laws</a></h4>
-            <h5 class="top">Source: <a href="single.html"> National Review</a></h5>
-            <h5 class="topic-rating"> Article Rating: 14 Right <i> 12 Ratings</i></h5>
-            <h5 class="topic-rating"> Source Avg Rating:  41 (Very Right)</h5>
-        </div>
-        <div class="clearfix"> </div>
-    </div>
-
-    </div>
 </div>
 
 </body>
