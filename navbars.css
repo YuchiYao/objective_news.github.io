@@ -11,8 +11,8 @@
 }
 
 .media-object{
-	width: 138px;
-	height: 138px;
+	width: 195px;
+	height: 195px;
 }
 .media{
 	float: left;
@@ -24,7 +24,7 @@
     margin-left: 10px;
 
       /*padding*/
-
+    background-color: white;
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -41,6 +41,24 @@
 	position: relative;
 	/*padding: 20px;*/
 	/*top: 3px;*/
-	margin-top: 5px;
+	margin-top: 3px;
 	/*bottom: 3px;*/
 }
+
+.background{
+	background-color: #f7f7f7;
+}
+
+.left-alien{
+	text-align: left;
+	padding: 0px;
+}
+
+.right_col{
+	margin-top: 20px;
+}
+.grey{
+	color: #a8a6a5;
+	font-size: 12px;
+}
+
