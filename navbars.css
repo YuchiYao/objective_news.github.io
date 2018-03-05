@@ -7,7 +7,7 @@
 	margin-bottom: 10px;
 }
 .user_profile{
-	padding: 5px;
+	padding: 0px;
 }
 
 .media-object{
@@ -74,5 +74,23 @@
 
 .footer{
 	padding-left: 45%;
-	font-size: 30px;
+	font-size: 15px;
+}
+
+.padding_top{
+	padding-bottom: 0px;
+	padding-left: 30px;
+}
+.media{
+	border-radius: 0px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.media-heading{
+	padding-top: 6px;
+}
+.navbar_color{
+	margin-bottom: 0px;
+	background: white;
 }
