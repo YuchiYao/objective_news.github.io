@@ -50,3 +50,9 @@
 .right-box {
 	background-color: rgba(144, 61, 61, .1);
 }
+.new_line{
+  padding-top: 30px;
+}
+.button_group{
+  padding: 20px;
+}
