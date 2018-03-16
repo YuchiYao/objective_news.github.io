@@ -6,11 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Blogger Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<link href="css1/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css1/style.css" rel='stylesheet' type='text/css' />	
-<link href="css1/article.css" rel='stylesheet' type='text/css' /> 
+
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="navbars.css">
+<link href="css1/style.css" rel='stylesheet' type='text/css' /> 
+<link href="css1/article.css" rel='stylesheet' type='text/css' /> 
+<link rel="stylesheet" type="text/css" href="navbars.css">
 
 </head>
 
@@ -31,8 +31,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-header_collaped">
       <ul class="nav navbar-nav">
-        <li ><a href="#">World<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Business</a></li>
+        <li ><a href="world.html">World<span class="sr-only">(current)</span></a></li>
+        <li><a href="business.html">Business</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -187,93 +187,124 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="js/article.js"></script>
+<!-- Left or right sucessful-->
+
+
+<div class="modal" id="comment_succeed" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">      
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title">Congratuation</h3>  
+      </div>
+      <div class="modal-body">
+        <p>You have rated this article successfully</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- preview -->
  <div class="container">
     <div class="row">
-      <div class="col-md-12 col-md-offset-0"><h3>Preview</h3>
-        <div class="media">
-          <div class="media-left">
-            <a href="#">
-              <img class="media-object" src="images/1.jpg">
-            </a>
-            <div class="label_tu">
-              <span class="label label-default">Trump</span>
-              <span class="label label-primary">Gun</span>
-              
-            </div>
+      <div class="col-md-12 col-md-offset-0">
+        <h3 class = "pageHeader">Preview</h3>      
+        <div class="media-left">
+          <a href="#">
+            <img class="media-object" src="images/1.jpg">
+          </a>
+          <div class="label_tu">
+            <span class="label label-default">Trump</span>
+            <span class="label label-primary">Gun</span>
           </div>
-          <div class="media-body">
-            <h3 class="media-heading">Topic: GUN LEGISLATION</h3>
-            <h4>Article: Gun Control, NOW! (left) My Veronj</h4>
-            <h2>        </h2>
-            <h2>        </h2>
-            <h4>Abstract</h4>
-            <h2>        </h2>
-            <h2>        </h2>
-            <p class="abstract">The mass shooting that left 17 dead at a high school in Parkland, Florida, earlier this month has led to new calls for gun control legislation in the US. Polling indicates that public support for such a move is at its highest point in two decades – although Republican support is soft, making an act of Congress less likely.</p>
-            <h4 class="interest">Do you think this article is biased?</h4>
-            <div class="btn-group" role="group" aria-label="...">
-              <button type="button" class="btn btn-default">LEFT</button>
-              <button type="button" class="btn btn-default">NEUTRAL</button>
-              <button type="button" class="btn btn-default">RIGHT</button>
-            </div>
-            <h4 class="interest">Are you interested?</h4>
-            <a href="https://www.theguardian.com/us-news/2018/feb/27/gun-control-proposals-florida-school-shooting">View the whole article</a>
+        </div>
+        <div class="media-body article_header">
+          <h3 class="media-heading">Topic: GUN LEGISLATION</h3>
+          <h4 class="vertical_line h4_header"> Article: Gun Control, NOW! (left) My Veronj</h4>
+          <br>
+          <h4>Abstract</h4>
+          <p class="abstract">The mass shooting that left 17 dead at a high school in Parkland, Florida, earlier this month has led to new calls for gun control legislation in the US. Polling indicates that public support for such a move is at its highest point in two decades – although Republican support is soft, making an act of Congress less likely.</p>
+          <h4 class="interest">Do you think this article is biased?</h4>
+          <br>
+          <div class="btn-group button_group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#comment_succeed">LEFT</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#comment_succeed">NEUTRAL</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#comment_succeed">RIGHT</button>
           </div>
+          <h4 class="interest">Read the bias of this article</h4>
+          <a href="https://www.theguardian.com/us-news/2018/feb/27/gun-control-proposals-florida-school-shooting">View the whole article</a>
         </div>
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control article-text-entry comentbox" rows="5" id="comment" oninput="OnTextInput()"></textarea>
+      <button type="submit" class="btn btn-default article-cancel" onclick="OnCommentCancel()">Cancel</button>
+      <button type="submit" id="comment-submit-button" class="btn btn-default article-submit" disabled="True" onclick="OnCommentSubmit()">Submit</button>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-xs-2 col-md-2 col-md-offset-8">
+        <select class="form-control" id="comment-filter" onchange="onFilterSelect()">      
+            <option value="Newest First">Newest First</option>
+            <option value="Oldest First">Oldest First</option>
+        </select>
+      </div> 
+    </div>
+      
+  
+    <div class="article-comment" data-time="47">
+      <img class="comment-profile" src="img/anon_user.png" alt="...">
+      <div class="comment-username"> Tom</div>
+      <div class="comment-time"> 1 hour ago</div>
+      <div class="comment-body">   It would be more accurate to say "There should be MORE armed teachers."Armed teachers have existed for some years in rural schools.Perhaps urban teachers are less trustworthy than teachers in rural schools?</div>
+    </div>
+    <div class="article-comment" data-time="120">
+      <img class="comment-profile" src="img/anon_user.png" alt="...">
+      <div class="comment-username"> Jimmy</div>
+      <div class="comment-time" > 2 hours ago</div>
+      <div class="comment-body"> Are teachers somehow different than everyone else? When you arm a teacher how do you know that person isn't like all the other nuts who do these shootings? You don't. The simple fact is that when people have guns they can commit mass shootings.</div>
+    </div>
+    <div class="article-comment" data-time="240">
+      <img class="comment-profile" src="img/anon_user.png" alt="...">
+      <div class="comment-username"> StrangeName</div>
+      <div class="comment-time"> 4 hours ago</div>
+      <div class="comment-body">The problem that nobody seems to mention is that there's no way to tell when a seemingly normal individual is going to snap and go on a homicidal rampage. The guy that shot up the Las Vegas concert was an outwardly normal guy. Right up until he killed 58 people and wounded many many more. Not only isn't there a way to know who's a monster under the mask of sanity there wont be any time soon. </div>
+    </div>
+    <div class="article-comment" data-time="480">
+      <img class="comment-profile" src="img/anon_user.png" alt="...">
+      <div class="comment-username">Nobody</div>
+      <div class="comment-time"> 8 hours ago</div>
+      <div class="comment-body">There might be some people with mental health problems who would manage to escape, but soldiers coming back from combat are pretty easy to identify to give them appropriate treatment for a start.</div>
+    </div>
+    <div class="article-comment" data-time="1440">
+      <img class="comment-profile" src="img/anon_user.png" alt="...">
+      <div class="comment-username">Kitty</div>
+      <div class="comment-time"> 1 day ago</div>
+      <div class="comment-body"> “I own guns so I'm not an enemy of the second amendment right”.How certain are you that you’re never going to “snap and go on a homicidal rampage” like so many other “seemingly normal people”?</div>
   </div>
 
 <!-- <h2 class="topic-title">Article: GUN LEGISLATION </h2> -->
 
-  <div class="col-md-8 col-md-offset-2">
-    <div class="form-group">
-      <label for="comment">Comment:</label>
-      <textarea class="form-control article-text-entry" rows="5" id="comment" oninput="OnTextInput()"></textarea>
-      <button type="submit" class="btn btn-default article-cancel" onclick="OnCommentCancel()">Cancel</button>
-      <button type="submit" id="comment-submit-button" class="btn btn-default article-submit" disabled="True" onclick="OnCommentSubmit()">Submit</button>
-    </div>
-  </div>
-
-  <div class="col-xs-2 col-md-2 col-md-offset-8">
-    <select class="form-control" id="comment-filter" onchange="onFilterSelect()">      
-        <option value="Newest First">Newest First</option>
-        <option value="Oldest First">Oldest First</option>
-    </select>
-  </div>
-  <div class="col-md-8 col-md-offset-2" id="comment-section">
-    <div class="article-comment" data-time="47">
-      <img class="comment-profile" src="img/anon_user.png" alt="...">
-      <div class="comment-username">  User 1 </div>
-      <div class="comment-time"> 1 hour ago</div>
-      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
-    </div>
-    <div class="article-comment" data-time="120">
-      <img class="comment-profile" src="img/anon_user.png" alt="...">
-      <div class="comment-username"> User 2  </div>
-      <div class="comment-time" > 2 hours ago</div>
-      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
-    </div>
-    <div class="article-comment" data-time="240">
-      <img class="comment-profile" src="img/anon_user.png" alt="...">
-      <div class="comment-username"> User 3 </div>
-      <div class="comment-time"> 4 hours ago</div>
-      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
-    </div>
-    <div class="article-comment" data-time="480">
-      <img class="comment-profile" src="img/anon_user.png" alt="...">
-      <div class="comment-username"> User 4 </div>
-      <div class="comment-time"> 8 hours ago</div>
-      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
-    </div>
-    <div class="article-comment" data-time="1440">
-      <img class="comment-profile" src="img/anon_user.png" alt="...">
-      <div class="comment-username"> User 5 </div>
-      <div class="comment-time"> 1 day ago</div>
-      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
-    </div>
-
+  
 
 </div>
 

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objective News -- world news</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="navbars.css">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar_color">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-header_collaped" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand uppercase" href="index.html">Objective News</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-header_collaped">
+      <ul class="nav navbar-nav">
+        <li class="active uppercase"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+        <li class="uppercase"><a href="#">World<span class="sr-only">(current)</span></a></li>
+        <li class="uppercase"><a href="business.html">Business</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle uppercase" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Enterainment</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Science</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Manage Section</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li class ="uppercase"><a id="signin" href="#" data-toggle="modal" data-target="#signIn">Sign In/up</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- Modal signIn-->
+<div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="exampleModalLabel">Sign In</h2>
+      </div>
+      <div class="modal-body ">   
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-check ">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" 
+                data-toggle="dropdown">
+                More Option <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signup" >Sign Up</a>
+              </li>
+              <li><a href="#">Forget Account</a></li>
+            </ul>
+        </div>
+        <a href="login.html">
+          <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal signUp-->
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="exampleModalLabel">Sign Up</h2>
+      </div>
+      <div class="modal-body">   
+        <form action="#" method="post" class="form" role="form">
+            <div class="row">
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control sign_up" name="firstname" placeholder="First Name" type="text"
+                        required autofocus />
+                </div>
+                <div class="col-xs-6 col-md-6">
+                    <input class="form-control sign_up" name="lastname" placeholder="Last Name" type="text" required />
+                </div>
+            </div>
+            <input class="form-control sign_up" name="youremail" placeholder="Your Email" type="email" />
+            <input class="form-control sign_up" name="reenteremail" placeholder="Re-enter Email" type="email" />
+            <input class="form-control sign_up" name="password" placeholder="New Password" type="password" />
+            <label for="">
+                Birth Date</label>
+            <div class="row">
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Month">Month</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Day">Day</option>
+                    </select>
+                </div>
+                <div class="col-xs-4 col-md-4">
+                    <select class="form-control">
+                        <option value="Year">Year</option>
+                    </select>
+                </div>
+            </div>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                Female
+            </label>
+            <br />
+            <br />
+            <button class="btn btn-lg btn-primary btn-block" type="submit" data-dismiss="modal" data-target="#succeed" data-toggle="modal">
+                Sign up</button>
+            </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal signUp Succeed-->
+<div class="modal" id="succeed" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">      
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title">Congraduation</h3>  
+      </div>
+      <div class="modal-body">
+        <p>Your account number is 38947185</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="control.js"></script>
+<!--<div class="container">-->
+    
+    <div class="row background">
+      <div class="col-md-7 col-md-offset-1">
+        <h3 class="top padding_top">Top News</h3>
+        <div class="media">
+          <div class="media-left">
+            <a href="topic.html">
+              <img class="media-object" src="images/world1.jpg" alt="...">
+            </a>
+            <div class="label_tu">
+              <span class="label label-default">Trump</span>
+              <!-- <span class="label label-primary">Gun</span> -->
+              
+            </div>
+          </div>
+          <div class="media-body">
+            <a href="topic.html"><h4 class="media-heading">EXPLORE TOPIC: USA and Russia</h4></a>
+            <h5 class="top"><a href="article.html">US punishes 19 Russians over vote meddling and cyber-attacks</a></h5>
+            <p class="abstract-tu"><br></p>
+            <h5 class="top"><a href="article.html">U.S. joins France, Germany and UK to blame Russia for nerve agent attack in Britain</a></h5>
+            <p class="abstract-tu"><br></p>
+            <h5 class="top"><a href="article.html">Sanctions show Trump being tough on Russia. Expect more</a></h5>
+            <p class="abstract-tu"><br></p>
+            <h5 class="top"><a href="article.html">...</a></h5>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <a href="topic.html">
+              <img class="media-object" src="images/world2.jpg" alt="...">
+            </a>
+            <div class="label_tu">
+              <!-- <span class="label label-default">Gun</span> -->
+              <span class="label label-primary">France</span>
+              
+            </div>
+          </div>
+          <div class="media-body">
+            <a href="topic.html"><h4 class="media-heading">EXPLORE TOPIC: France</h4></a>
+            <h5 class="top"><a href="article.html">France seeks arrest of Saudi king's daughter</a></h5>
+            <p class="abstract-tu">It is ...</p>
+            <h5 class="top"><a href="article.html">France set to sue Apple and Google for abusive business practices</a></h5>
+            <p class="abstract-tu">It does't matter that...</p>
+            <h5 class="top"><a href="article.html">French police issue arrest warrant for Saudi princess</a></h5>
+            <p class="abstract-tu">...</p>
+            <h5 class="top"><a href="article.html">...</a></h5>
+          </div>
+        </div>
+        <div class="media">
+          <div class="media-left">
+            <a href="topic.html">
+              <img class="media-object" src="images/world3.jpg" alt="...">
+            </a>
+            <div class="label_tu">
+              <span class="label label-default">Canada</span>
+              <!-- <span class="label label-primary">Shooting</span> -->
+             
+            </div>
+          </div>
+          <div class="media-body">
+            <a href="topic.html"><h4 class="media-heading">EXPLORE TOPIC: Canada</h4></a>
+            <h5 class="top"><a href="article.html">Canada disputes Trump on trade, White House insists he's right</a></h5>
+            <p class="abstract-tu">It is ....</p
+            <h5 class="top"><a href="article.html">Trump Repeats False Claim About Canada After Admitting Uncertainty Over Figure</a></h5>
+            <p class="abstract-tu">It does't matter ...</p>
+            <h5 class="top"><a href="article.html">Introducing 'Steve,' Canada's newest type of northern lights</a></h5>
+            <p class="abstract-tu">It is ...</p>
+            <h5 class="top"><a href="article.html">...</a></h5>
+          </div>
+        </div>
+       <!--  <div class="media">
+          <div class="media-left">
+            <a href="topic.html">
+              <img class="media-object" src="images/4.jpg" alt="...">
+            </a>
+            <div class="label_tu">
+              <span class="label label-default">Criminal</span>
+              <span class="label label-primary">Info</span>
+              
+            </div>
+          </div>
+          <div class="media-body">
+            <a href="topic.html"><h4 class="media-heading">EXPLORE TOPIC: CRIMINAL JUSTICE REFORM</h4></a>
+            <h5 class="top"><a href="article.html">Donald Trump and the Undoing of Justice Reform (left) New York Times</a></h5>
+            <p class="abstract-tu">It is important to control guns</p>
+            <h5 class="top"><a href="article.html">Fate of bipartisan bill on criminal justice reform uncertain (center) PBS</a></h5>
+            <p class="abstract-tu">It does't matter whether to control guns</p>
+            <h5 class="top"><a href="article.html">Celebrity justice: RBG edition (right) Richmond</a></h5>
+            <p class="abstract-tu">It is not good to control guns</p>
+            <h5 class="top"><a href="article.html">...</a></h5>
+          </div>
+        </div> -->
+      </div>
+      <div class="col-md-3 right_col">
+      	<h4 class="top padding_top">In the News</h4>
+        <div class="media">
+          <div class="media-body ">
+            <nav aria-label="...">
+              <ul class="pager left-alien">
+                <li class="space-pager"><a href="#">North Koera</a></li>
+              </ul>
+              <ul class="pager left-alien">
+                <li class="space-pager"><a href="#">Donald Trump</a></li>
+              </ul>
+              </ul>
+              <ul class="pager left-alien">
+                <li class="space-pager"><a href="#">Academic Awards</a></li>
+              </ul>
+              </ul>
+              <ul class="pager left-alien">
+                <li class="space-pager"><a href="#">Ghouta</a></li>
+              </ul>
+              </ul>
+              <ul class="pager left-alien">
+                <li class="space-pager"><a href="#">Asia</a></li>
+              </ul>
+              <ul class="pager left-alien">
+                <li class="space-pager"><a href="#">Kim Jong-un</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div>
+	        <h4 class="padding_top">Recent News</h4>
+	        <div class="media">
+	          <div class="media-body ">
+	            <p><a href="#" target="_blank">Cairo prosecutor orders arrest of TV host for 'defaming police': MENA</a></p>
+	            <p class="grey"> Reuters ' 2017</p>
+	          </div>
+	        </div>
+        </div>
+        <div>
+	        <h4 class="padding_top">Fact Check</h4>
+	        <div class="media">
+	          <div class="media-body ">
+	            <p><a href="#" target="_blank">Did Rhode Island's Governor Sign an Executive Order to Seize Guns?</a></p>
+	            <p class="grey"> Snopes.com</p>
+	            <p><a href="#" target="_blank">Taking a closer look at Florida's school resource officer count</a></p>
+	            <p class="grey"> PolitiFact</p>
+	            <p><a href="#" target="_blank">Fact Check: What Really Happened With That 'Scripted' CNN Town Hall Question?</a></p>
+	            <p class="grey">The Weekly Standard</p>
+	          </div>
+	        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>   
+  <footer >
+  <p class="footer"><i class="glyphicon glyphicon-tree-deciduous"></i> Design By Group 1</p>
+  </footer>  
+<!--</div>-->
+</body>
+</html>
+
