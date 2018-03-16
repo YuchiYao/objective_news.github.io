@@ -175,7 +175,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <h3 class="modal-title">Congratulations</h3>  
       </div>
       <div class="modal-body">
-        <p>Your account number is 38947185</p>
+        <p>You have successfully created your account!</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn" data-dismiss="modal">Close</button>
@@ -209,6 +209,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   </div>
 </div>
 
+<div class="modal mod2" id="abuse-report" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">      
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 class="modal-title">Abuse Report</h3>  
+      </div>
+      <div class="modal-body">
+        <p>Your report has been submitted and will be under review.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- preview -->
  <div class="container">
     <div class="row">
@@ -229,14 +248,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <br>
           <h4>Abstract</h4>
           <p class="abstract">The mass shooting that left 17 dead at a high school in Parkland, Florida, earlier this month has led to new calls for gun control legislation in the US. Polling indicates that public support for such a move is at its highest point in two decades – although Republican support is soft, making an act of Congress less likely.</p>
-          <h4 class="interest">Do you think this article is biased?</h4>
+          <h4 class="interest">Rate the Bias of this Article</h4>
           <br>
           <div class="btn-group button_group" role="group" aria-label="...">
             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#comment_succeed">LEFT</button>
             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#comment_succeed">NEUTRAL</button>
             <button type="button" class="btn btn-default" data-toggle="modal" data-target="#comment_succeed">RIGHT</button>
           </div>
-          <h4 class="interest">Read the bias of this article</h4>
+          <h4 class="interest">For the Full Story</h4>
           <a href="https://www.theguardian.com/us-news/2018/feb/27/gun-control-proposals-florida-school-shooting">View the whole article</a>
         </div>
       </div>
@@ -253,9 +272,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <br>
     <br>
     <br>
+
     <div class="form-group">
       <label for="comment">Comment:</label>
-      <textarea class="form-control article-text-entry comentbox" rows="5" id="comment" oninput="OnTextInput()"></textarea>
+      <textarea class="form-control article-text-entry article-newComment" rows="5" id="comment" oninput="OnTextInput()"></textarea>
       <button type="submit" class="btn btn-default article-cancel" onclick="OnCommentCancel()">Cancel</button>
       <button type="submit" id="comment-submit-button" class="btn btn-default article-submit" disabled="True" onclick="OnCommentSubmit()">Submit</button>
     </div>
@@ -266,40 +286,73 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <select class="form-control" id="comment-filter" onchange="onFilterSelect()">      
             <option value="Newest First">Newest First</option>
             <option value="Oldest First">Oldest First</option>
+            <option value="Highest Rated">Highest Rated</option>
+            <option value="Lowest Rated">Lowest Rated</option>
         </select>
       </div> 
     </div>
       
-  
-    <div class="article-comment" data-time="47">
-      <img class="comment-profile" src="img/anon_user.png" alt="...">
-      <div class="comment-username">  User 1 </div>
-      <div class="comment-time"> 1 hour ago</div>
-      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
-    </div>
-    <div class="article-comment" data-time="120">
-      <img class="comment-profile" src="img/anon_user.png" alt="...">
-      <div class="comment-username"> User 2  </div>
-      <div class="comment-time" > 2 hours ago</div>
-      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
-    </div>
-    <div class="article-comment" data-time="240">
-      <img class="comment-profile" src="img/anon_user.png" alt="...">
-      <div class="comment-username"> User 3 </div>
-      <div class="comment-time"> 4 hours ago</div>
-      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
-    </div>
-    <div class="article-comment" data-time="480">
-      <img class="comment-profile" src="img/anon_user.png" alt="...">
-      <div class="comment-username"> User 4 </div>
-      <div class="comment-time"> 8 hours ago</div>
-      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
-    </div>
-    <div class="article-comment" data-time="1440">
-      <img class="comment-profile" src="img/anon_user.png" alt="...">
-      <div class="comment-username"> User 5 </div>
-      <div class="comment-time"> 1 day ago</div>
-      <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
+    <div id="comment-section">
+      <div id="c-001" class="article-comment" data-time="47" data-rating="5">
+        <img class="comment-profile" src="img/anon_user.png" alt="...">
+        <div class="comment-rest"> 
+          <div class="comment-username"> Adam Z. </div>
+          <div class="comment-time"> 1 hour ago</div>
+          <button type="button" id="b1-001" onClick="onRatePositive(this.id)" class="btn comment-button">+</button>
+          <button type="button" id="b2-001" onClick="onRateNegative(this.id)" class="btn comment-button">-</button>
+          <button type="button" id="b3-001" class="btn comment-button" title="Report Abuse" data-toggle="modal" data-target="#abuse-report"> ! </button>
+          <div class="comment-rating" id="r-001"> Rating: 5</div>
+          <div class="comment-body"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+      </div>
+      <div id="c-002" class="article-comment" data-time="120" data-rating="-2">
+        <img class="comment-profile" src="img/anon_user.png" alt="...">
+        <div class="comment-rest"> 
+          <div class="comment-username"> Betsy M. </div>
+          <div class="comment-time" > 2 hours ago</div>
+          <button type="button" id="b1-002" onClick="onRatePositive(this.id)" class="btn comment-button">+</button>
+          <button type="button" id="b2-002" onClick="onRateNegative(this.id)" class="btn comment-button">-</button>
+          <button type="button" id="b3-002" class="btn comment-button" title="Report Abuse" data-toggle="modal" data-target="#abuse-report"> ! </button>
+          <div class="comment-rating" id="r-002"> Rating: -2</div>
+          <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
+        </div>
+      </div>
+      <div id="c-003" class="article-comment" data-time="240" data-rating="7">
+        <img class="comment-profile" src="img/anon_user.png" alt="...">
+        <div class="comment-rest"> 
+          <div class="comment-username"> Carlos D. </div>
+          <div class="comment-time"> 4 hours ago</div>
+          <button type="button" id="b1-003" onClick="onRatePositive(this.id)" class="btn comment-button">+</button>
+          <button type="button" id="b2-003" onClick="onRateNegative(this.id)" class="btn comment-button">-</button>
+          <button type="button" id="b3-003" class="btn comment-button" title="Report Abuse" data-toggle="modal" data-target="#abuse-report"> ! </button>
+          <div class="comment-rating" id="r-003"> Rating: 7</div>
+          <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
+        </div>
+      </div>
+      <div id="c-004" class="article-comment" data-time="480" data-rating="-14">
+        <img class="comment-profile" src="img/anon_user.png" alt="...">
+        <div class="comment-rest"> 
+          <div class="comment-username"> Daisy H. </div>
+          <div class="comment-time"> 8 hours ago</div>
+          <button type="button" id="b1-004" onClick="onRatePositive(this.id)" class="btn comment-button">+</button>
+          <button type="button" id="b2-004" onClick="onRateNegative(this.id)" class="btn comment-button">-</button>
+          <button type="button" id="b3-004" class="btn comment-button" title="Report Abuse" data-toggle="modal" data-target="#abuse-report"> ! </button>
+          <div class="comment-rating" id="r-004"> Rating: -14</div>
+          <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
+        </div>
+      </div>
+      <div id="c-005" class="article-comment" data-time="1440" data-rating="55">
+        <img class="comment-profile" src="img/anon_user.png" alt="...">
+        <div class="comment-rest"> 
+          <div class="comment-username"> Eddie G. </div>
+          <div class="comment-time"> 1 day ago</div>
+          <button type="button" id="b1-005" onClick="onRatePositive(this.id)" class="btn comment-button">+</button>
+          <button type="button" id="b2-005" onClick="onRateNegative(this.id)" class="btn comment-button">-</button>
+          <button type="button" id="b3-005" class="btn comment-button" title="Report Abuse" data-toggle="modal" data-target="#abuse-report"> ! </button>
+          <div class="comment-rating" id="r-005"> Rating: 55</div>
+          <div class="comment-body"> afsfewf qreqreq qrwggwq rqwrewq blab balfhiw ofhwiaof  wio efhiwqfph ie owfhqpi</div>
+        </div>
+      </div>
   </div>
 
 <!-- <h2 class="topic-title">Article: GUN LEGISLATION </h2> -->
