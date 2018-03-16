@@ -130,6 +130,21 @@ body {
 
 .text2{
   width: 100%;
-  padding-top: 3%;
+  padding-top: 1%; 
   padding-left: 7%; 
+}
+
+.text3{
+  width: 100%;
+  padding-left: 7%; 
+}
+
+.searchBar{
+	margin-left: 7%;
+	width: 25%;
+	display: inline-block;
+}
+
+.btn1{
+	margin-left: 6%;
 }
