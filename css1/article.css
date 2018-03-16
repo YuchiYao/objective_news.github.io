@@ -8,19 +8,22 @@
 .article-cancel{
     margin: 20px auto;
 }
-
+.article-newComment {
+	background-color: rgba(61, 144, 61, .1);
+    box-shadow: 2px 4px #888888;
+}
 .article-comment {
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
     height: 150px;
-    background-color: rgba(61, 144, 61, .1);
+    background-color: rgba(61, 61, 61, .1);
     box-shadow: 2px 4px #888888;
 }
 
 .comment-profile {
-	width: 20%;
+	width: auto;
 	height: 100%;
 	float: left;
 }
@@ -35,19 +38,47 @@
 }
 .comment-time {
 	max-height: 25%;
-	width: 40%;
+	width: 25%;
 	float: left;
 	font-style: italic;
+	font-size: 10;
+}
+.comment-rating {
+	max-height: 25%;
+	width: 10%;
+	float: right;
+	font-style: normal;
 	font-size: 12;
+	font-weight: bold;
+	clear: right;
+}
+.comment-ratingYours {
+	max-height: 25%;
+	width: 35%;
+	float: right;
+	font-style: normal;
+	font-size: 12;
+	font-weight: bold;
+	text-align: right;
+}
+.comment-button {
+	width: 5%;
+	font-size: 24;
+	font-weight: bolder;
+	float: right;
+}
+.comment-rest {
+	margin-left: 15%;
 }
 .comment-body {
 	max-height: 75%
 	margin-left: 5px;
 	font-size: 12;
-	/*float: left;*/
+	float: left;
 }
 .comentbox{
 	width: 70%;
+	background-color: grey;
 }
 
 .pageHeader{
